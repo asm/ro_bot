@@ -1,0 +1,2 @@
+class PrivMessageStack < Array
+end
