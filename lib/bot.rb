@@ -73,9 +73,9 @@ class Bot
       name = presence.from.resource
       addr = presence.x.elements['item affiliation'].jid.to_s
 
-      return if name =~ /Ro Bot/
-
-      self.roster[name] = addr
+      unless name =~ /Ro Bot/
+        self.roster[name] = addr
+      end
     end
 
     muc.add_leave_callback do |presence|
