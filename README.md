@@ -7,7 +7,7 @@ require 'rubygems'
 
 require 'lib/bot.rb'
 
-# See https://newrelic.hipchat.com/account/xmpp for you XMPP login details
+# See https://<your organization>.hipchat.com/account/xmpp for you XMPP login details
 # Using resource "/bot" on the user JID prevents HipChat from sending the
 # history upon channel join.
 settings = {
